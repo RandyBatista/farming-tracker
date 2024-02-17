@@ -1,11 +1,15 @@
 {
   "files": [],
+  "extends": [
+    "./configs/tsconfig.vite.json",
+    "./configs/tsconfig.web.json"
+  ],
   "references": [
     {
-      "path": "./config/tsconfig.node.json"
+      "path": "./configs/tsconfig.vite.json"
     },
     {
-      "path": "./config/tsconfig.web.json"
+      "path": "./configs/tsconfig.web.json"
     }
   ]
 }
