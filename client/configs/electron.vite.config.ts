@@ -4,15 +4,12 @@ import { resolve } from 'path'
 
 export default defineConfig({
   main: {
-    root: 'src',
     plugins: [externalizeDepsPlugin()]
   },
   preload: {
-    root: 'src',
     plugins: [externalizeDepsPlugin()]
   },
   renderer: {
-    root: 'src',
     resolve: {
       alias: {
         '@renderer': resolve('app/renderer/src')
